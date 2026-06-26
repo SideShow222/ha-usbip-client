@@ -11,6 +11,14 @@ RUN apk add --no-cache \
     device-mapper-libs \
     python3 \
     py3-pip \
+    build-base \
+    python3-dev \
+    libffi-dev \
+    openssl-dev \
+    autoconf \
+    automake \
+    libtool \
+    linux-headers \
     && pip3 install --no-cache-dir --break-system-packages \
     -r /tmp/requirements.txt \
     && rm /tmp/requirements.txt
